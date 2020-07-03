@@ -6,7 +6,7 @@ from rdkit.Chem import Draw, Descriptors
 from matplotlib import pyplot as plt
 import pandas as pd
 from sklearn.model_selection import train_test_split
-smifile = 'Data\chembl_smiles.txt'
+smifile = 'chembl_smiles.txt'
 data = pd.read_csv(smifile, delimiter="\t", names=["smiles", "No", "Int"])
 smiles_train, smiles_test = train_test_split(data["smiles"], random_state=42)
 print(smiles_train.shape)
