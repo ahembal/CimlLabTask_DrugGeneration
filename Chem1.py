@@ -1,4 +1,5 @@
 import os
+from tensorflow import set_random_seed
 import numpy as np
 from rdkit import Chem
 from rdkit.Chem import Draw, Descriptors
